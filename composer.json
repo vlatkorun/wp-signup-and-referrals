@@ -1,0 +1,6 @@
+{
+  "autoload": {
+    "psr-4": {"WPSR\\": "src/"},
+    "files": ["src/helpers.php"]
+  }
+}
