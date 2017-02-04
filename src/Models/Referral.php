@@ -10,6 +10,7 @@ use WPSR\CustomPosts\Metaboxes\Referrals\ReferralParent;
 use WPSR\CustomPosts\Metaboxes\Referrals\UserEmail;
 use InvalidArgumentException;
 use WPSR\CustomPosts\Referrals as ReferralsCustomPost;
+use WPSR\Helpers\Coupon as Generator;
 
 class Referral
 {
@@ -92,7 +93,47 @@ class Referral
         $this->setReferralCode($params['referral_code']);
         $this->setUserEmail($params['user_email']);
         $this->setReferralParent(0);
-        
+
         return $postId;
+    }
+
+    public function find($referralId)
+    {
+
+    }
+
+    public function findByRefferralCode($referralId)
+    {
+
+    }
+
+    public function findByUserEmail($referralId)
+    {
+
+    }
+
+    public function findByReferralParent($referralId)
+    {
+
+    }
+
+    public function findReferralParentChildren($referralId)
+    {
+
+    }
+
+    public function hasReferralParentChildren($referralId)
+    {
+
+    }
+
+    public function hasReferralParent($referralId)
+    {
+
+    }
+
+    public function generateReferralCode()
+    {
+        return Generator::generate(8);
     }
 }
