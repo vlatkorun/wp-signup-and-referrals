@@ -28,5 +28,5 @@ abstract class AbstractFilter
         return $this->accepted_args;
     }
 
-    abstract public function handler();
+    abstract public function filter();
 }

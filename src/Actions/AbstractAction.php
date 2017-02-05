@@ -23,5 +23,5 @@ abstract class AbstractAction
         return $this->argumentsNumber;
     }
 
-    abstract public function handler();
+    abstract public function action();
 }
