@@ -2,34 +2,17 @@
 
 namespace WPSR\Helpers;
 
-use Jenssegers\Blade\Blade;
-
 class Template
 {
     protected $data = [];
+    
+    protected $templateFile;
 
     protected $engine;
 
-    protected $templateFile;
-
-    protected static $instance;
-
-    private function __construct()
+    public function __construct()
     {
-        if(!$this->engine instanceof Blade)
-        {
-            $this->engine = new Blade(wpsr_path('templates'), wpsr_path('templates/cache'));
-        }
-    }
-
-    public static function make()
-    {
-        if(!static::$instance)
-        {
-            static::$instance = new static;
-        }
-
-        return static::$instance;
+        $this->engine = TemplateEngine::make();
     }
 
     public function render($data = [], $template = null)
@@ -51,6 +34,11 @@ class Template
 
     public function output($data = [], $template = null)
     {
+        if(is_string($data))
+        {
+            $data = [];
+        }
+
         echo $this->render($data, $template);
     }
 

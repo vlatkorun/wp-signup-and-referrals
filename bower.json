@@ -1,0 +1,14 @@
+{
+  "name": "Wordpress SignUp and Referrals",
+  "homepage": "https://github.com/vlatkorun/wp-signup-and-referrals",
+  "authors": [
+    "Vladimir Runchev <vlatkorun@gmail.com>"
+  ],
+  "description": "Create referrals from user sign-up on your WordPress website",
+  "main": "",
+  "license": "MIT",
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "lodash": "^4.17.4"
+  }
+}

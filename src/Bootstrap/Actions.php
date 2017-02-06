@@ -4,12 +4,14 @@ namespace WPSR\Bootstrap;
 
 use WPSR\Actions\AdminInit;
 use WPSR\Actions\AdminMenu;
+use WPSR\Actions\Init;
 
 class Actions extends AbstractBootstrapper
 {
     protected $adminActions = [
         AdminInit::class,
         AdminMenu::class,
+        Init::class,
     ];
 
     protected $siteActions = [

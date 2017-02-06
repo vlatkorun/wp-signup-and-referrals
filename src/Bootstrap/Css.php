@@ -5,11 +5,11 @@ namespace WPSR\Bootstrap;
 class Css extends AbstractBootstrapper
 {
     protected $admin = [
-//        [
-//            'name' => '',
-//            'filename' => '',
-//            'dependencies' => []
-//        ]
+        [
+            'name' => 'font-awesome',
+            'filename' => 'assets/libs/font-awesome/css/font-awesome.min.css',
+            'dependencies' => []
+        ]
     ];
 
     protected $site = [

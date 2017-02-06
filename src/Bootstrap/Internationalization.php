@@ -6,20 +6,16 @@ class Internationalization extends AbstractBootstrapper
 {
     public function init()
     {
-        $this->initLanguages();
-        $this->loadPluginTextDomain('wpsr', wpsr_path('languages'));
+        add_action('plugins_loaded', [$this, 'loadPluginTextDomain']);
     }
 
     public function initLanguages()
     {
-        add_action('plugins_loaded', [$this, 'loadPluginTextDomain']);
+
     }
 
-    public function loadPluginTextDomain($domain, $path)
+    public function loadPluginTextDomain()
     {
-        if(is_dir($path))
-        {
-            load_plugin_textdomain($domain, false, $path);
-        }
+        load_plugin_textdomain('wpsr', false, wpsr_path('languages'));
     }
 }

@@ -2,10 +2,12 @@
 
 namespace WPSR\AdminMenu;
 
+use WPSR\AdminMenu\Pages\Main;
+
 class MenuPages
 {
     protected $pages = [
-
+        Main::class,
     ];
 
     public function registerPages()

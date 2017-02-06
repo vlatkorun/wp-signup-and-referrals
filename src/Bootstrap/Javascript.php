@@ -5,11 +5,16 @@ namespace WPSR\Bootstrap;
 class Javascript extends AbstractBootstrapper
 {
     protected $admin = [
-//        [
-//            'name' => '',
-//            'filename' => '',
-//            'dependencies' => []
-//        ]
+        [
+            'name' => 'lodash',
+            'filename' => 'assets/libs/lodash/dist/lodash.min.js',
+            'dependencies' => []
+        ],
+        [
+            'name' => 'settings.page',
+            'filename' => 'assets/js/admin/settings.page.js',
+            'dependencies' => ['jquery']
+        ],
     ];
 
     protected $site = [
