@@ -32,6 +32,6 @@ class AdminInit extends AbstractAction
 
     protected function registerSettings()
     {
-        wpsr_with(new Settings())->registerSettings();
+        wpsr_with(new Settings)->registerSettings();
     }
 }

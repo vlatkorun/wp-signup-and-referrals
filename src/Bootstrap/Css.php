@@ -9,6 +9,11 @@ class Css extends AbstractBootstrapper
             'name' => 'font-awesome',
             'filename' => 'assets/libs/font-awesome/css/font-awesome.min.css',
             'dependencies' => []
+        ],
+        [
+            'name' => 'main',
+            'filename' => 'assets/css/admin/main.css',
+            'dependencies' => []
         ]
     ];
 

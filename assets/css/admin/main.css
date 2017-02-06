@@ -1,0 +1,9 @@
+.wpsr-hidden{
+    display: none;
+}
+.notice-error.wpsr-notice-error{
+    border-left: 0 solid !important;
+    background: #dc3232 !important;
+    color: #fff !important;
+    padding: 5px !important;
+}

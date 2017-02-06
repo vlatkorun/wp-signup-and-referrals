@@ -12,7 +12,7 @@ class Main extends AbstractPage
     protected $menuSlug = 'wpsr-dashboard';
     protected $function = [Template::class, 'output']; //which file to use to render the html
     protected $iconUrl = 'dashicons-universal-access-alt';
-    protected $position = 9;
+    protected $position = 30;
     protected $subpages = [
         Dashboard::class,
         Settings::class,
